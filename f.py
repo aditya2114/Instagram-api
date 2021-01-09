@@ -16,8 +16,8 @@ def request():
     url = "https://instagram-data1.p.rapidapi.com/followers"
     querystring = {"username":"test__usernme"}  
     headers = {
-        'x-rapidapi-key': "e8848f05a1msh2192aae5fe568eap1245afjsne1e13e63e38f",
-        'x-rapidapi-host': "instagram-data1.p.rapidapi.com"
+        'x-rapidapi-key': "<getyourskey>",
+        'x-rapidapi-host': "<getyourskey>"
     }
     response = requests.request("GET", url, headers=headers, params=querystring)
     data = json.loads(response.text)
